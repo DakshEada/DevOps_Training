@@ -21,7 +21,7 @@
 		"ImageID": {
 			"Description": "Name of an existing EC2 KeyPair to enable SSH access to the instance",
 			"Type": "String",
-			"Default": "ami-02d38967"
+			"Default": "ami-8a7859ef"
 
 		},
 		"InstanceSecurityGroup": {
