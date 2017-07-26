@@ -15,13 +15,13 @@
 		"KeyName": {
 			"Description": "Name of an existing EC2 KeyPair to enable SSH access to the instance",
 			"Type": "String",
-			"Default": "dfad"
+			"Default": "cipracticals"
 
 		},
 		"ImageID": {
 			"Description": "Name of an existing EC2 KeyPair to enable SSH access to the instance",
 			"Type": "String",
-			"Default": "ami-8a7859ef"
+			"Default": "ami-8b92b4ee"
 
 		},
 		"InstanceSecurityGroup": {
