@@ -60,7 +60,7 @@
 					"Fn::Base64": {
 						"Fn::Join": ["", [
 							"#!/bin/bash -v\n",
-                                                        "curl -o /tmp/bootchef.sh http://10.0.0.119/bootchef.sh\n",
+                                                        "curl -o /tmp/bootchef.sh http://52.43.11.64/bootchef.sh\n",
                                                         "chmod +x /tmp/bootchef.sh\n",
                                                         "sudo /bin/bash /tmp/bootchef.sh ::PROD_ENV:: ::PROD_COMPONENT::\n",
 							"/opt/aws/bin/cfn-signal -e 0 -r \"ChefClient setup complete\" '", {
