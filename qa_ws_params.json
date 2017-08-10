@@ -1,0 +1,22 @@
+[
+  {
+    "ParameterKey": "ImageID",
+    "ParameterValue": "ami-7df1ab18"
+  },
+  {
+    "ParameterKey": "InstanceType",
+    "ParameterValue": "t2.micro"
+  },
+   {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "cipracticals"
+   },
+  {
+     "ParameterKey": "SubnetId",
+    "ParameterValue": "subnet-fb325f92"
+  },
+  {
+    "ParameterKey": "InstanceSecurityGroup",
+    "ParameterValue": "sg-5be8fb32"
+  }
+]
