@@ -13,7 +13,8 @@ sudo rpm -ivh *.rpm
 sudo mkdir -p /etc/chef
 sudo chmod -R 777 /etc/chef
 cd /etc/chef
-
+echo "COMPONENT=::COMPONENT::">envdata
+echo "ENVIRONMENT=::ENVIRONMENT::">>envdata
 sudo curl -o /etc/chef/client.rb  http://13.58.45.200//client.rb
 #wget http://52.43.11.64/knife.rb
 sudo curl -o /etc/chef/daksh_eada.pem  http://13.58.45.200/daksh_eada.pem
