@@ -9,14 +9,14 @@
   },
    {
     "ParameterKey": "KeyName",
-    "ParameterValue": "Training1"
+    "ParameterValue": "cipracticals"
    },
   {
      "ParameterKey": "SubnetId",
-    "ParameterValue": "subnet-4a4a323c"
+    "ParameterValue": "subnet-fb325f92"
   },
   {
     "ParameterKey": "InstanceSecurityGroup",
-    "ParameterValue": "sg-18739161"
+    "ParameterValue": "sg-5be8fb32"
   }
 ]
