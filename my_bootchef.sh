@@ -1,4 +1,5 @@
 #!/bin/bash
+COMPONENT=$1
 sudo sed -i s#Defaults.*requiretty#Defaults\ \!requiretty#g /etc/sudoers
 sudo yum -y makecache fast
 sudo yum -y install wget
