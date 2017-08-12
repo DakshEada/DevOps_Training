@@ -1,10 +1,16 @@
+
 {
-   "Type" : "AWS::EC2::VPC",
-   "Properties" : {
-      "CidrBlock" : String,
-      "EnableDnsSupport" : Boolean,
-      "EnableDnsHostnames" : Boolean,
-      "InstanceTenancy" : String,
-      "Tags" : [ Resource Tag, ... ]
+   "AWSTemplateFormatVersion" : "2010-09-09",
+   "Resources" : {
+      "myVPC" : {
+         "Type" : "AWS::EC2::VPC",
+         "Properties" : {
+            "CidrBlock" : "10.0.0.0/16",
+    	    "EnableDnsSupport" : "false",
+    	    "EnableDnsHostnames" : "false",
+            "InstanceTenancy" : "default",
+            "Tags" : [ {"Key" : "nd_VPC1", "Value" : "personal_vpc"} ]
+         }
+      }
    }
 }     
