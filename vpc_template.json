@@ -50,4 +50,3 @@
 			"Type": "AWS::CloudFormation::WaitConditionHandle"
 		}
 	}
-}
