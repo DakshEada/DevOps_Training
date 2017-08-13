@@ -1,15 +1,53 @@
 
 {
-   "AWSTemplateFormatVersion" : "2010-09-09",
-   "Resources" : {
-      "myVPC" : {
-         "Type" : "AWS::EC2::VPC",
-         "Properties" : {
-            "CidrBlock" : "String",
-    	    "EnableDnsSupport" : "false",
-    	    "EnableDnsHostnames" : "false",
-            "InstanceTenancy" : "default"
-         }
-      }
-   }
-}     
+	"AWSTemplateFormatVersion": "2010-09-09",
+
+	"Description": "AWS CloudFormation Sample Template for creating a vpc",
+
+	"Parameters": {
+
+		"CidrBlock": {
+			"Type": "String"
+			
+		},
+
+		"EnableDnsSupport": {
+			"Type": "Boolean"
+
+		},
+		"EnableDnsHostnames": {
+			"Type": "Boolean"
+			
+		},
+		"InstanceTenancy": {
+			"Type": "String"
+			}
+		
+
+	},
+	"Resources": {
+		"TestVPC": {
+			"Type": "AWS::EC2::VPC",
+			"Properties": {
+				"VPCblock": {
+					"Ref": "CidrBlock"
+				},
+
+				"VPC_DNS": [{
+					"Ref": "EnableDnsSupport"
+				}],
+				"DnsHostnames": {
+					"Ref": "EnableDnsHostnames"
+				},
+				"Tenancy": {
+					"Ref": "InstanceTenancy"
+				}
+				
+				}
+			}
+		},
+		"WaitHandle": {
+			"Type": "AWS::CloudFormation::WaitConditionHandle"
+		}
+	}
+}
